@@ -290,8 +290,6 @@ int apply_aes(cl_uchar * buffer, size_t size, opencl_device device, aes_mode mod
 		ok = 0;
 		goto cleanup;
 	}
-	
-	printf("\n\nCIAO\n\n");
 
 	error = clBuildProgram(program, 1, devices, 0, NULL, NULL);
 	printf("clBuildProgram...\n");
