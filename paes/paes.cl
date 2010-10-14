@@ -33,24 +33,8 @@ __constant const uchar alogtable[AES_SBOX_SIZE] = AES_ALOGTABLE;
 
 void sub_bytes(size_t block, __global uchar * buffer, __constant const uchar * sbox)
 {
-	//for (size_t i = 0; i < 16; ++i)
-	//    buffer[block + i] = sbox[buffer[block + i]];
-	buffer[block * 16 + 0l] = sbox[buffer[block * 16 + 0]];
-	buffer[block * 16 + 1l] = sbox[buffer[block * 16 + 1]];
-	buffer[block * 16 + 2l] = sbox[buffer[block * 16 + 2]];
-	buffer[block * 16 + 3l] = sbox[buffer[block * 16 + 3]];
-	buffer[block * 16 + 4l] = sbox[buffer[block * 16 + 4]];
-	buffer[block * 16 + 5l] = sbox[buffer[block * 16 + 5]];
-	buffer[block * 16 + 6l] = sbox[buffer[block * 16 + 6]];
-	buffer[block * 16 + 7l] = sbox[buffer[block * 16 + 7]];
-	buffer[block * 16 + 8l] = sbox[buffer[block * 16 + 8]];
-	buffer[block * 16 + 9l] = sbox[buffer[block * 16 + 9]];
-	buffer[block * 16 + 10l] = sbox[buffer[block * 16 + 10]];
-	buffer[block * 16 + 11l] = sbox[buffer[block * 16 + 11]];
-	buffer[block * 16 + 12l] = sbox[buffer[block * 16 + 12]];
-	buffer[block * 16 + 13l] = sbox[buffer[block * 16 + 13]];
-	buffer[block * 16 + 14l] = sbox[buffer[block * 16 + 14]];
-	buffer[block * 16 + 15l] = sbox[buffer[block * 16 + 15]];
+	for (size_t i = 0; i < 16; ++i)
+	    buffer[block * 16 + i] = sbox[buffer[block * 16 + i]];
 }
 
 void shift_rows(size_t block, __global uchar * buffer)
