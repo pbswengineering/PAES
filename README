@@ -1,0 +1,21 @@
+This is my Computer Science master degree's thesis!
+PAES is an AES encryption tool that, thanks to OpenCL, can work both 
+on CPUs and GPUs.
+
+
+
+FILES
+--------------------------
+env.sh          script that sets the environment variables that makes
+                AMD's OpenCL SDK to work; you'll surely need to modify
+                it, if you want to use it.
+
+
+DIRECTORIES
+--------------------------
+aes             the serial AES reference implementation
+paes            PAES source code
+thesis-slides   slides about PAES (used for my dissertation)
+query           a simple tool to query for your CPU/GPU's capabilities
+test            programs used to test PAES correctness and performances
+thesis-text     my master degree thesis' text
