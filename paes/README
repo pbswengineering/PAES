@@ -1,0 +1,19 @@
+To compile PAES you need:
+
+* an OpenCL SDK (tested with AMD' and NVIDIA's ones);
+* GCC version 4 or more;
+* doxygen, if you want to generate the code documentation.
+
+
+
+
+Usage: ./paes -i INPUT -o OUTPUT -m MODE [-k KEY_SIZE] [-p PASSWD] [-d DEV] [-g GSIZE] [-l LSIZE]
+
+  -i INPUT         the input file
+  -o OUTPUT        the output file
+  -m MODE          MODE can be encrypt or decrypt
+  -k KEY_SIZE      the key size can be 128, 192 or 256 (default is 128)
+  -p PASSWD        the password; if unspecified the user will be asked to type it
+  -d DEV           DEV can be cpu or gpu (default is cpu)
+  -g GSIZE         the OpenCL global work size (default is decided by OpenCL)
+  -l LSIZE         the OpenCL local work size (default is 8)

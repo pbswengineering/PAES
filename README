@@ -4,7 +4,7 @@ PAES README
 This is my Computer Science master degree's thesis!
 
 PAES is an AES encryption tool that, thanks to OpenCL, can work both 
-on CPUs and GPUs.
+on CPUs and GPUs. It encrypts in ECB mode.
 
 As you'll see in the directories list, this package contains both the software
 and the thesis text and slides (both written in Italian). You should beware that
@@ -19,6 +19,11 @@ FILES
 env.sh          script that sets the environment variables that makes
                 AMD's OpenCL SDK to work; you'll surely need to modify
                 it, if you want to use it.
+
+clean.sh        cleans each sub-directory of its temporary compiler-generated
+                files.
+
+
 
 
 DIRECTORIES
