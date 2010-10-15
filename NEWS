@@ -1,0 +1,11 @@
+1.1
+-------------
+The PAES encryption kernel has been corrected in order to be OpenCL-compliant 
+because the AMD kernel compiler has started enforcing the fact that vectors 
+aren't accessible by subscript. It surely took them long enough (and even
+longer for me to notice my mistake)!
+
+
+1.0
+-------------
+First release, presented as my master degree thesis

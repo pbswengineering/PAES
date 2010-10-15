@@ -1,6 +1,16 @@
+PAES README
+--------------------------
+
 This is my Computer Science master degree's thesis!
+
 PAES is an AES encryption tool that, thanks to OpenCL, can work both 
 on CPUs and GPUs.
+
+As you'll see in the directories list, this package contains both the software
+and the thesis text and slides (both written in Italian). You should beware that
+the thesis and the presentation refers to the first version of PAES and they
+aren't strictly aligned with the program anymore. 
+
 
 
 

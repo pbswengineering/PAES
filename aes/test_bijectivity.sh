@@ -1,4 +1,8 @@
 #!/bin/bash
+#
+# A simple test to see if this serial AES implementation, unregarding its
+# correctness, respects the following relation: decrypt(encrypt(data)) = data
+#
 
 function test_aes {
 	echo -n "Testing $1... "

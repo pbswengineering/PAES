@@ -1,3 +1,26 @@
+#
+#    PAES - Parallel AES for CPUs and GPUs
+#    Copyright (C) 2009  Paolo Bernardi <paolo.bernardi@gmx.it>
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, version 2 of the License.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License along
+#    with this program; if not, write to the Free Software Foundation, Inc.,
+#    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+#
+##############################################################################
+#
+# This test checks if PAES respects the following relation, regardless of its
+# adherence to the AES standard: decrypt(encrypt(data)) = data
+# This relation is tested for AES as whole and for each of the 4 sub-operations.
+#
 #!/usr/bin/env python
 
 from common import BaseTest

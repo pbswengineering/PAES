@@ -1,0 +1,9 @@
+Each sub-project has its own licensing scheme; in particular:
+
+* PAES, the serial AES, the tests and the query tool are licensed under GPL 2;
+
+* The thesis text and slides are licensed under Creative Commons 2.5
+  Attribution Share-alike.
+  
+In general, if not explicitly stated otherwise, PAES software is licensed under 
+GPL 2 and PAES documentation under Creative Commons 2.5 Attribution Share-alike.

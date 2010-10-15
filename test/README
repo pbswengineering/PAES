@@ -1,0 +1,29 @@
+This directory contains the PAES test suite; in order to run it you need to
+have the PAES source code in ../paes and the reference serial AES implementation
+source code in ../aes; you also need a correctly installed OpenCL SDK and
+a fairly recent version of Python 2 (2.6 or more is surely good).
+
+The test executable files are the following:
+
+   * test_bijectivity.py: checks if applying PAES respects the relation
+       decrypt(encrypt(data)) = data;
+       
+   * test_conformance.py: checks if PAES is conformant to the serial AES
+       reference implementation;
+       
+   * test_file_size.py: checks if PAES works well with different input file
+       sizes;
+       
+   * test_performance.py: measures PAES performances.
+   
+Each test executable accepts "cpu" or "gpu" as argument; for example, to test
+PAES performances on your GPU you could use the following command line:
+
+$ ./test_performance.py gpu
+
+The test results will be logged into files under the report/ directory (it will
+be created if non-existant). The random data generated for the tests will be put
+in a directory named temp-something/, where "something" is the name of the test
+that you're running; if the test will end correctly than such directory will be
+automatically deleted, otherwise it will be left untouched to allow further 
+analysis.
