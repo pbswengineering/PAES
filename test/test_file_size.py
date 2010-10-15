@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #
 #    PAES - Parallel AES for CPUs and GPUs
 #    Copyright (C) 2009  Paolo Bernardi <paolo.bernardi@gmx.it>
@@ -21,7 +22,6 @@
 # it checks if the relation decrypt(encrypt(data)) = data holds true for
 # different file sizes.
 #
-#!/usr/bin/env python
 
 from common import BaseTest
 from os import system

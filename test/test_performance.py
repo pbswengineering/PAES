@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #
 #    PAES - Parallel AES for CPUs and GPUs
 #    Copyright (C) 2009  Paolo Bernardi <paolo.bernardi@gmx.it>
@@ -20,7 +21,6 @@
 # This test checks PAES performances for different file sizes and for each of
 # the 3 standard key lenghts; it tests both encryption and decryption times.
 #
-#!/usr/bin/env python
 
 from common import BaseTest
 from os import system

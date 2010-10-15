@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #
 #    PAES - Parallel AES for CPUs and GPUs
 #    Copyright (C) 2009  Paolo Bernardi <paolo.bernardi@gmx.it>
@@ -21,7 +22,6 @@
 # adherence to the AES standard: decrypt(encrypt(data)) = data
 # This relation is tested for AES as whole and for each of the 4 sub-operations.
 #
-#!/usr/bin/env python
 
 from common import BaseTest
 from os import system

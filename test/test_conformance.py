@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #
 #    PAES - Parallel AES for CPUs and GPUs
 #    Copyright (C) 2009  Paolo Bernardi <paolo.bernardi@gmx.it>
@@ -21,7 +22,6 @@
 # implementation (see ../aes); the test regards the AES algorithm as whole and
 # each of the 4 sub-operations.
 #
-#!/usr/bin/env python
 
 from common import BaseTest
 from os import system
