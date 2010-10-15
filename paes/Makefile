@@ -1,4 +1,4 @@
-.PHONY: all clean indent doc edit sync test gputest 
+.PHONY: all clean indent doc 
 
 CC = gcc
 CFLAGS = $(DEFINES) -Wall -Wextra -Werror -pedantic -pedantic-errors -std=c99 -I '$(ATISTREAMSDKROOT)/include/'
