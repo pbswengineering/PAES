@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 import os, re, sys
 
 print 'Opening', sys.argv[1]
